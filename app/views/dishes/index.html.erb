@@ -1,7 +1,12 @@
+<div class="row">
+  <div class="col-md-8"><h1>Menu</h1></div>
+  <div class="col-md-4"></div>
+</div>
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Dishes</h1>
 
+<div class="col-md-4">
 <table>
   <thead>
     <tr>
@@ -16,18 +21,16 @@
   <tbody>
     <% @dishes.each do |dish| %>
       <tr>
-        <td><%= dish.name %></td>
+        <td id= "name"><%= dish.name %></td>
         <td><%= dish.price %></td>
         <td><%= dish.description %></td>
         <td><%= dish.course_id %></td>
-        <td><%= link_to 'Show', dish %></td>
-        <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
-        <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td id= "link"><%= link_to 'Edit', edit_dish_path(dish) %></td>
+        <td id= "link"><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
 <%= link_to 'New Dish', new_dish_path %>
+
+</div>
