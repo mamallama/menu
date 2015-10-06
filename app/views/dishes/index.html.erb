@@ -21,12 +21,11 @@
   <tbody>
     <% @dishes.each do |dish| %>
       <tr>
-        <td id= "name"><%= dish.name %></td>
+        <td><%= link_to dish.name, edit_dish_path(dish)  %></td>
         <td><%= dish.price %></td>
         <td><%= dish.description %></td>
         <td><%= dish.course_id %></td><br>
         <td id= "link"><%= link_to 'Edit', edit_dish_path(dish) %>
-        <td id= "link"><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

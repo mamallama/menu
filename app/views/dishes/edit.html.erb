@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
+<td id= "link"><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <%= link_to 'Show', @dish %> |
 <%= link_to 'Back', dishes_path %>
