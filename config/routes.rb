@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   resources :courses
   resources :dishes
+  resources :courses
+  resources :dishes
 
   root 'dishes#index'
   # The priority is based upon order of creation: first created -> highest priority.
