@@ -15,11 +15,15 @@
  @import "bootstrap";
 
 
-#name {
-  font: helvetica;
-  
+.header {
+  color: Teal
 }
-
+.body span{
+  color: Grey;
+  #price{
+    color: Green;
+  }
+}
 #link {
   font: helvetica;
 }

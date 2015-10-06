@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-8"><h1>Menu</h1></div>
+  <div class="col-md-8"><h1 class="header">Menu</h1></div>
   <div class="col-md-4"></div>
 </div>
 
@@ -10,15 +10,15 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Course</th>
+      <th span="name">Name</th>
+      <th span="name" id="price">Price</th>
+      <th span="name">Description</th>
+      <th span="name">Course</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody span="body">
     <% @dishes.each do |dish| %>
       <tr>
         <td><%= link_to dish.name, edit_dish_path(dish)  %></td>
