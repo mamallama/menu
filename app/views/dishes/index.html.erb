@@ -7,7 +7,7 @@
 
 
 <div class="col-md-4">
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -24,8 +24,8 @@
         <td id= "name"><%= dish.name %></td>
         <td><%= dish.price %></td>
         <td><%= dish.description %></td>
-        <td><%= dish.course_id %></td>
-        <td id= "link"><%= link_to 'Edit', edit_dish_path(dish) %></td>
+        <td><%= dish.course_id %></td><br>
+        <td id= "link"><%= link_to 'Edit', edit_dish_path(dish) %>
         <td id= "link"><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

@@ -7,8 +7,9 @@ class DishesController < ApplicationController
   end
 
   # GET /dishes/1
-  # def show
-  # end
+  def show
+    redirect_to dishes_url
+  end
 
   # GET /dishes/new
   def new
